@@ -1,0 +1,85 @@
+.main-content {
+  margin-top: 150px;
+  margin-bottom: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 16rem;
+  z-index: -10;
+
+  .sub-main-content {
+    max-width: 80rem;
+    height: 16rem;
+    margin: auto;
+    z-index: -10;
+    // inset: 0;
+    position: absolute;
+  }
+}
+
+.main-content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    106.89deg,
+    rgba(192, 132, 252, 0.11) 15.73%,
+    rgba(14, 165, 233, 0.41) 15.74%,
+    rgba(232, 121, 249, 0.26) 56.49%,
+    rgba(79, 70, 229, 0.4) 115.91%
+  );
+  filter: blur(118px);
+  z-index: -1;
+}
+
+.title {
+  font-size: 4.5rem;
+  line-height: 1;
+  color: rgb(15 23 42/1);
+  letter-spacing: -0.025em;
+  font-weight: 500;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0;
+
+  .title-span {
+    color: rgb(37 99 235/1);
+    white-space: nowrap;
+    position: relative;
+
+    .svg {
+      fill: rgba(147, 197, 253, 0.7);
+      width: 100%;
+      height: 0.58em;
+      top: 66.666667%;
+      left: 0;
+      position: absolute;
+      display: block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.sub-title {
+  color: rgb(51 65 85/1);
+  letter-spacing: -0.025em;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  max-width: 36rem;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.call-to-action {
+  column-gap: 1.5rem;
+  justify-content: center;
+  display: flex;
+  margin-top: 2.5rem;
+}
